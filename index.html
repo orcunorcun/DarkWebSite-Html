@@ -67,15 +67,15 @@
 		  </div>
 		  
 		</nav>
-			
+			<canvas id="topWave"></canvas>
 		
 		
 	</header>
 
-	<div class="container-fluid body-content pt-3 pb-3">
+	<div class="container-fluid body-content ">
 	
-		<div class="row">
-			<div class="col-md-3">
+		<div class="row box ">
+			<div class="col-md-3 left  mt-3 mb-3">
 				<div class="h-100 p-3 bg-brand-dark text-white">
 				 
 					<img class="card-img-top img-fluid" src="img/lg-text.png" alt="Card image cap">
@@ -88,38 +88,36 @@
 				  </p>
 				</div>
 			</div>
-			<div class="col-md-9">
-				<div class="card-deck">
-				  <div class="card no-border">
-					<img class="card-img-top img-fluid" src="img/lg-1.png" alt="Card image cap">
-					<div class="card-body">
-					  <h4 class="card-title">Orcun Studio</h4>
-					  <p class="card-text text-justify">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+			<div class="col-md-9 right  mt-3 mb-3">
+				<div class="row">
+					<div class="card-deck ml-1 mr-1">
+					  <div class="card no-border">
+						<img class="card-img-top img-fluid" src="img/lg-1.png" alt="Card image cap">
+						<div class="card-body">
+						  <h4 class="card-title">Orcun Studio</h4>
+						  <p class="card-text text-justify">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						</div>
+						
+					  </div>
+					  <div class="card no-border">
+						<img class="card-img-top img-fluid" src="img/lg-2.png" alt="Card image cap">
+						<div class="card-body">
+						  <h4 class="card-title">Orcun Apps</h4>
+						  <p class="card-text text-justify">This card has supporting text below as a natural lead-in to additional content.</p>
+						</div>
+						
+					  </div>
+					  <div class="card no-border">
+						<img class="card-img-top img-fluid" src="img/lg-3.png" alt="Card image cap">
+						<div class="card-body">
+						  <h4 class="card-title">Orcun Graphic</h4>
+						  <p class="card-text text-justify">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+						</div>
+					  </div>
 					</div>
-					
-				  </div>
-				  <div class="card no-border">
-					<img class="card-img-top img-fluid" src="img/lg-2.png" alt="Card image cap">
-					<div class="card-body">
-					  <h4 class="card-title">Orcun Apps</h4>
-					  <p class="card-text text-justify">This card has supporting text below as a natural lead-in to additional content.</p>
-					</div>
-					
-				  </div>
-				  <div class="card no-border">
-					<img class="card-img-top img-fluid" src="img/lg-3.png" alt="Card image cap">
-					<div class="card-body">
-					  <h4 class="card-title">Orcun Graphic</h4>
-					  <p class="card-text text-justify">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-					</div>
-					
-				  </div>
-				  
 				</div>
-			</div>
-		</div>
-		
-		<h2 class="col-md-12 text-white p-3">Recent Projects</h2>
+				<div class="mr-1">
+				<h2 class="col-md-12 text-white p-3">Recent Projects</h2>
 		
 		<div class="scrollbar">
 			<div class="handle">
@@ -219,17 +217,14 @@
 				</li>
 			</ul>
 		</div>
-	 
-	
-		
-		
+				</div>
+			</div>
+		</div>
 		
 	</div>
-	<footer>
-		 <div class="container-fluid py-2 bg-brand-dark">
-			<div class="row">
-				<div class="col-md-12 text-left text-white"> ©2017 Orcun Studio, Inc. </div>
-			</div>
+	<footer class=" bg-brand-dark ">
+		 <div class="copyrighttext-left text-white m-2">
+				 ©2017 Orcun Studio, Inc.
 		</div>
 	</footer>
 	<script>
@@ -251,5 +246,8 @@
 	<script src="js/sly.min.js"></script>
 	<script src="js/horizontal.js"></script>
 	<script src="js/jquery.easing.js"></script>
+	
+	<!-- Wave JavaScripts -->
+	<script src="js/wave.js"></script>
 </body>
 </html>

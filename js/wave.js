@@ -1,17 +1,6 @@
-$(window).scroll(function() {
-
-    if ($(this).scrollTop()>0)
-     {
-        $('.topWave').fadeOut();
-     }
-    else
-     {
-      $('.topWave').fadeIn();
-     }
- });
 
 	var ppp = 0;
-		var hhh = 20;
+		var hhh = 7;
 		var wid = 0;
 
      var myAarray = new Array;   
@@ -28,7 +17,7 @@ var jj=0;
 var increase = Math.PI /90+wid;
 var topWave = document.getElementById("topWave")
 topWave.width = window.innerWidth;
-topWave.height = window.innerHeight/15;
+topWave.height = (window.innerHeight/100)*3;
 var withi = window.innerWidth/5
 	for ( i = 0; i <=withi; i ++ ) 
 	{
