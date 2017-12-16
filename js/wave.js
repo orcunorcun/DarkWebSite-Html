@@ -33,7 +33,7 @@ var withi = window.innerWidth/5
 						
 		myAarray[i].beginPath();
 		myAarray[i].lineWidth="10";
-		myAarray[i].strokeStyle="#1a1a1a"; // Green path
+		myAarray[i].strokeStyle="#1a1a1a"; 
 		myAarray[i].moveTo(0+jj,0);
 		myAarray[i].lineTo(jj,pp);
 		myAarray[i].stroke(); // Draw it
