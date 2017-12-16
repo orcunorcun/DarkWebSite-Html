@@ -23,8 +23,6 @@
 	
 	 <!-- Sly CSS -->
     <link href="css/sly.css" rel="stylesheet">
-	 <!-- Wave CSS -->
-    <link href="css/wave.css" rel="stylesheet">
 
 </head>
 
@@ -74,157 +72,158 @@
 		
 	</header>
 
-	<div class="container-fluid body-content p-0 m-0">
+	<div class="container-fluid body-content pt-3 pb-3">
 	
-	 <canvas class='w-100' id='topWave'></canvas>
-		<div class="container-fluid m-0 p-0 ">
-			<div class="row  m-0 p-0">
-				<div class="col-md-3">
-					<div class="h-100 p-3 bg-brand-dark text-white">
-					 
-						<img class="card-img-top img-fluid" src="img/lg-text.png" alt="Card image cap">
-						
-					  <p class="lead text-justify">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-					  <hr class="my-4">
-					  <p class="text-justify">It uses utility classes for typography and spacing to space content out within the larger container.</p>
-					  <p class="lead">
-						<a class="btn btn-secondary btn-lg" href="#" role="button">Learn more</a>
-					  </p>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="h-100 p-3 bg-brand-dark text-white">
+				 
+					<img class="card-img-top img-fluid" src="img/lg-text.png" alt="Card image cap">
+					
+				  <p class="lead text-justify">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+				  <hr class="my-4">
+				  <p class="text-justify">It uses utility classes for typography and spacing to space content out within the larger container.</p>
+				  <p class="lead">
+					<a class="btn btn-secondary btn-lg" href="#" role="button">Learn more</a>
+				  </p>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="card-deck">
+				  <div class="card no-border">
+					<img class="card-img-top img-fluid" src="img/lg-1.png" alt="Card image cap">
+					<div class="card-body">
+					  <h4 class="card-title">Orcun Studio</h4>
+					  <p class="card-text text-justify">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 					</div>
-				</div>
-				<div class="col-md-9">
-					<div class="card-deck">
-					  <div class="card no-border">
-						<img class="card-img-top img-fluid" src="img/lg-1.png" alt="Card image cap">
-						<div class="card-body">
-						  <h4 class="card-title">Orcun Studio</h4>
-						  <p class="card-text text-justify">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-						</div>
-						
-					  </div>
-					  <div class="card no-border">
-						<img class="card-img-top img-fluid" src="img/lg-2.png" alt="Card image cap">
-						<div class="card-body">
-						  <h4 class="card-title">Orcun Apps</h4>
-						  <p class="card-text text-justify">This card has supporting text below as a natural lead-in to additional content.</p>
-						</div>
-						
-					  </div>
-					  <div class="card no-border">
-						<img class="card-img-top img-fluid" src="img/lg-3.png" alt="Card image cap">
-						<div class="card-body">
-						  <h4 class="card-title">Orcun Graphic</h4>
-						  <p class="card-text text-justify">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-						</div>
-						
-					  </div>
-					  
+					
+				  </div>
+				  <div class="card no-border">
+					<img class="card-img-top img-fluid" src="img/lg-2.png" alt="Card image cap">
+					<div class="card-body">
+					  <h4 class="card-title">Orcun Apps</h4>
+					  <p class="card-text text-justify">This card has supporting text below as a natural lead-in to additional content.</p>
 					</div>
+					
+				  </div>
+				  <div class="card no-border">
+					<img class="card-img-top img-fluid" src="img/lg-3.png" alt="Card image cap">
+					<div class="card-body">
+					  <h4 class="card-title">Orcun Graphic</h4>
+					  <p class="card-text text-justify">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+					</div>
+					
+				  </div>
+				  
 				</div>
 			</div>
-			
-			<h2 class="col-md-12 text-white p-3">Recent Projects</h2>
-			
-			<div class="scrollbar">
-				<div class="handle">
-					<div class="mousearea"></div>
-				</div>
-			</div>
-			<div class="frame" id="cyclepages">
-				<ul class="clearfix">
-					<li class="m-1 rounded">
-						<figure class="figure m-0">
-						  <img src="img/lg-1.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
-						  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
-						</figure>
-					</li>
-					<li class="m-1 rounded">
-						<figure class="figure m-0">
-						  <img src="img/lg-2.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
-						  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
-						</figure>
-					</li>
-					<li class="m-1 rounded">
-						<figure class="figure m-0">
-						  <img src="img/lg-3.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
-						  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
-						</figure>
-					</li>
-					<li class="m-1 rounded">
-						<figure class="figure m-0">
-						  <img src="img/lg-1.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
-						  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
-						</figure>
-					</li>
-					<li class="m-1 rounded">
-						<figure class="figure m-0">
-						  <img src="img/lg-2.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
-						  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
-						</figure>
-					</li>
-					<li class="m-1 rounded">
-						<figure class="figure m-0">
-						  <img src="img/lg-3.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
-						  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
-						</figure>
-					</li>
-					<li class="m-1 rounded">
-						<figure class="figure m-0">
-						  <img src="img/lg-1.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
-						  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
-						</figure>
-					</li>
-					<li class="m-1 rounded">
-						<figure class="figure m-0">
-						  <img src="img/lg-2.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
-						  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
-						</figure>
-					</li>
-					<li class="m-1 rounded">
-						<figure class="figure m-0">
-						  <img src="img/lg-3.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
-						  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
-						</figure>
-					</li>
-						<li class="m-1 rounded">
-						<figure class="figure m-0">
-						  <img src="img/lg-1.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
-						  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
-						</figure>
-					</li>
-					<li class="m-1 rounded">
-						<figure class="figure m-0">
-						  <img src="img/lg-2.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
-						  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
-						</figure>
-					</li>
-					<li class="m-1 rounded">
-						<figure class="figure m-0">
-						  <img src="img/lg-3.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
-						  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
-						</figure>
-					</li>	<li class="m-1 rounded">
-						<figure class="figure m-0">
-						  <img src="img/lg-1.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
-						  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
-						</figure>
-					</li>
-					<li class="m-1 rounded">
-						<figure class="figure m-0">
-						  <img src="img/lg-2.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
-						  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
-						</figure>
-					</li>
-					<li class="m-1 rounded">
-						<figure class="figure m-0">
-						  <img src="img/lg-3.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
-						  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
-						</figure>
-					</li>
-				</ul>
-			</div>
-		 
 		</div>
+		
+		<h2 class="col-md-12 text-white p-3">Recent Projects</h2>
+		
+		<div class="scrollbar">
+			<div class="handle">
+				<div class="mousearea"></div>
+			</div>
+		</div>
+		<div class="frame" id="cyclepages">
+			<ul class="clearfix">
+				<li class="m-1 rounded">
+					<figure class="figure m-0">
+					  <img src="img/lg-1.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
+					  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
+					</figure>
+				</li>
+				<li class="m-1 rounded">
+					<figure class="figure m-0">
+					  <img src="img/lg-2.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
+					  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
+					</figure>
+				</li>
+				<li class="m-1 rounded">
+					<figure class="figure m-0">
+					  <img src="img/lg-3.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
+					  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
+					</figure>
+				</li>
+				<li class="m-1 rounded">
+					<figure class="figure m-0">
+					  <img src="img/lg-1.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
+					  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
+					</figure>
+				</li>
+				<li class="m-1 rounded">
+					<figure class="figure m-0">
+					  <img src="img/lg-2.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
+					  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
+					</figure>
+				</li>
+				<li class="m-1 rounded">
+					<figure class="figure m-0">
+					  <img src="img/lg-3.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
+					  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
+					</figure>
+				</li>
+				<li class="m-1 rounded">
+					<figure class="figure m-0">
+					  <img src="img/lg-1.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
+					  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
+					</figure>
+				</li>
+				<li class="m-1 rounded">
+					<figure class="figure m-0">
+					  <img src="img/lg-2.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
+					  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
+					</figure>
+				</li>
+				<li class="m-1 rounded">
+					<figure class="figure m-0">
+					  <img src="img/lg-3.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
+					  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
+					</figure>
+				</li>
+					<li class="m-1 rounded">
+					<figure class="figure m-0">
+					  <img src="img/lg-1.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
+					  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
+					</figure>
+				</li>
+				<li class="m-1 rounded">
+					<figure class="figure m-0">
+					  <img src="img/lg-2.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
+					  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
+					</figure>
+				</li>
+				<li class="m-1 rounded">
+					<figure class="figure m-0">
+					  <img src="img/lg-3.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
+					  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
+					</figure>
+				</li>	<li class="m-1 rounded">
+					<figure class="figure m-0">
+					  <img src="img/lg-1.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
+					  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
+					</figure>
+				</li>
+				<li class="m-1 rounded">
+					<figure class="figure m-0">
+					  <img src="img/lg-2.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
+					  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
+					</figure>
+				</li>
+				<li class="m-1 rounded">
+					<figure class="figure m-0">
+					  <img src="img/lg-3.png" class="figure-img img-fluid rounded-top" alt="A generic square placeholder image with corners in a figure.">
+					  <figcaption class="figure-caption bg-brand-dark p-2 text-center rounded-bottom">A caption for the above image.</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</div>
+	 
+	
+		
+		
+		
 	</div>
 	<footer>
 		 <div class="container-fluid py-2 bg-brand-dark">
@@ -252,7 +251,5 @@
 	<script src="js/sly.min.js"></script>
 	<script src="js/horizontal.js"></script>
 	<script src="js/jquery.easing.js"></script>
-	<!-- Wave JavaScripts -->
-	<script src="js/wave.js"></script>
 </body>
 </html>
