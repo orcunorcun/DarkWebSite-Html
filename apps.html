@@ -20,167 +20,177 @@
 	
 	<!-- Font Awesome CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	
-	 <!-- Sly CSS -->
-    <link href="css/sly.css" rel="stylesheet">
+
+	<!-- Corner Ribbon CSS -->
+    <link href="css/corner-ribbon.css" rel="stylesheet">
 
 </head>
 
 <body>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-brand-dark" data-spy="affix" data-offset-top="100">
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
-		 
-		  <div class="d-none d-sm-block">
-		 
-		  <img class="img-fluid w-100" src="img/apps-logo-desktop.png" alt="Card image cap">
-		  </div>
-		  <div class="d-block d-sm-none">
-		   <img class="img-fluid w-100" src="img/apps-logo-mobile.png" alt="Card image cap">
-		 
-		  </div>
-
-		  <div class="collapse navbar-collapse" id="navbarToggler">
-			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-			  <li class="nav-item">
-				<a class="nav-link" href="index.html">Home</a>
-			  </li>
-			  <li class="nav-item active">
-				<a class="nav-link" href="apps.html">Apps <span class="sr-only">(current)</span></a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#">Graphics</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#">About Us</a>
-			  </li>
-			    <li class="nav-item">
-				<a class="nav-link" href="#">Contact</a>
-			  </li>
-			</ul>
-			<form class="form-inline my-2 my-lg-0">
-			  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-				<a class="btn btn-red" href="#" role="button">Search</a>
-			</form>
-		  </div>
-		  
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="d-none d-sm-block">
+				<img class="contain-image img-fluid w-100" src="img/apps-logo-desktop.png" alt="Card image cap">
+			</div>
+			<div class="d-block d-sm-none">
+				<img class="contain-image img-fluid w-100" src="img/apps-logo-mobile.png" alt="Card image cap">
+			</div>
+			<div class="collapse navbar-collapse" id="navbarToggler">
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="apps.html">Apps <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Design</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+				  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<a class="btn btn-red" href="#" role="button">Search</a>
+				</form>
+			</div>
 		</nav>
-			<canvas id="topWave"></canvas>
-		
-		
+		<canvas id="topWave"></canvas>
 	</header>
 
 	<div class="container-fluid body-content">
-	
 		<div class="row box pb-2 ">
-			<div class="col-md-3 left  mt-3 mb-3 ">
+			<div class="h-100 col-md-3 fixed-left  mt-3 mb-3 ">
 				<div class="h-100 p-3 bg-brand-dark text-white rounded-border ">
-				 
-					<img class="card-img-top img-fluid" src="img/apps-logo-white.png" alt="Card image cap">
-					
-				  <p class="lead text-justify">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-				  <hr class="my-4">
-				  <p class="text-justify">It uses utility classes for typography and spacing to space content out within the larger container.</p>
-				  <p class="lead">
-					<a class="btn btn-red btn-lg" href="#" role="button">Learn more</a>
-				  </p>
+					<img class="covered-image card-img-top img-fluid" src="img/apps-logo-white.png" alt="Card image cap">
+					<p class="lead text-justify m-3">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+					<hr class="my-4 m-3">
+					<p class="text-justify m-3">It uses utility classes for typography and spacing to space content out within the larger container.</p>
+					<p class="lead">
+						<a class="btn btn-red btn-lg m-3" href="#" role="button">Learn more</a>
+					</p>
 				</div>
 			</div>
-			<div class="col-md-9 right mt-3 mb-3">
-				<div class="row ">
-					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3 rounded-border">
-						<img src="img/lg-1.png" alt="image1" class="hovered-image rounded-border" style="width:100%">
+			<div class="h-100 col-md-9 moving-right mt-3 mb-3">
+				<div class="row clearfix">
+					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3  rounded-border">
+						<div class="ribbon"><span>MOBILE</span></div>
+						<img src="img/lg-1.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
 						<div class="hovered-image-middle">
 							<div class="hovered-image-text">Project 1</div>
 						</div>
 					</div>
 					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3 rounded-border">
-						<img src="img/lg-2.png" alt="image1" class="hovered-image rounded-border" style="width:100%">
+						<div class="ribbon"><span>DESKTOP</span></div>
+						<img src="img/lg-2.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
 						<div class="hovered-image-middle">
 							<div class="hovered-image-text">Project 2</div>
 						</div>
 					</div>
 					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3 rounded-border">
-						<img src="img/lg-3.png" alt="image1" class="hovered-image rounded-border" style="width:100%">
+						<div class="ribbon"><span>WEB</span></div>
+						<img src="img/lg-3.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
 						<div class="hovered-image-middle">
 							<div class="hovered-image-text">Project 3</div>
 						</div>
 					</div>
-					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3 rounded-border">
-						<img src="img/lg-1.png" alt="image1" class="hovered-image rounded-border" style="width:100%">
+					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3  rounded-border">
+						<div class="ribbon"><span>MOBILE</span></div>
+						<img src="img/lg-1.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
 						<div class="hovered-image-middle">
 							<div class="hovered-image-text">Project 4</div>
 						</div>
 					</div>
 					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3 rounded-border">
-						<img src="img/lg-2.png" alt="image1" class="hovered-image rounded-border" style="width:100%">
+						<div class="ribbon"><span>DESKTOP</span></div>
+						<img src="img/lg-2.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
 						<div class="hovered-image-middle">
 							<div class="hovered-image-text">Project 5</div>
 						</div>
 					</div>
 					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3 rounded-border">
-						<img src="img/lg-3.png" alt="image1" class="hovered-image rounded-border" style="width:100%">
+						<div class="ribbon"><span>WEB</span></div>
+						<img src="img/lg-3.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
 						<div class="hovered-image-middle">
 							<div class="hovered-image-text">Project 6</div>
 						</div>
 					</div>
-					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3 rounded-border">
-						<img src="img/lg-1.png" alt="image1" class="hovered-image rounded-border" style="width:100%">
+					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3  rounded-border">
+						<div class="ribbon"><span>MOBILE</span></div>
+						<img src="img/lg-1.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
 						<div class="hovered-image-middle">
 							<div class="hovered-image-text">Project 7</div>
 						</div>
 					</div>
 					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3 rounded-border">
-						<img src="img/lg-2.png" alt="image1" class="hovered-image rounded-border" style="width:100%">
+						<div class="ribbon"><span>DESKTOP</span></div>
+						<img src="img/lg-2.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
 						<div class="hovered-image-middle">
 							<div class="hovered-image-text">Project 8</div>
 						</div>
 					</div>
 					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3 rounded-border">
-						<img src="img/lg-3.png" alt="image1" class="hovered-image rounded-border" style="width:100%">
+						<div class="ribbon"><span>WEB</span></div>
+						<img src="img/lg-3.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
 						<div class="hovered-image-middle">
 							<div class="hovered-image-text">Project 9</div>
 						</div>
 					</div>
-					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3 rounded-border">
-						<img src="img/lg-1.png" alt="image1" class="hovered-image rounded-border" style="width:100%">
+					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3  rounded-border">
+						<div class="ribbon"><span>MOBILE</span></div>
+						<img src="img/lg-1.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
 						<div class="hovered-image-middle">
 							<div class="hovered-image-text">Project 10</div>
 						</div>
 					</div>
 					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3 rounded-border">
-						<img src="img/lg-2.png" alt="image1" class="hovered-image rounded-border" style="width:100%">
+						<div class="ribbon"><span>DESKTOP</span></div>
+						<img src="img/lg-2.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
 						<div class="hovered-image-middle">
 							<div class="hovered-image-text">Project 11</div>
 						</div>
 					</div>
 					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3 rounded-border">
-						<img src="img/lg-3.png" alt="image1" class="hovered-image rounded-border" style="width:100%">
+						<div class="ribbon"><span>WEB</span></div>
+						<img src="img/lg-3.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
 						<div class="hovered-image-middle">
 							<div class="hovered-image-text">Project 12</div>
 						</div>
 					</div>
-					
 				</div>
-				
-				
+				<div class="d-flex justify-content-center p-3">
+					<nav  data-pagination>
+						<div class="btn-group">
+							<button type="button" class="btn btn-red dropdown-toggle btn-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Page 1</button>
+							<div class="dropdown-menu scrollable-menu">
+								<button class="dropdown-item" type="button">1</button>
+								<button class="dropdown-item" type="button">2</button>
+								<button class="dropdown-item" type="button">3</button>
+								<button class="dropdown-item" type="button">4</button>
+								<button class="dropdown-item" type="button">5</button>
+								<button class="dropdown-item" type="button">6</button>
+								<button class="dropdown-item" type="button">7</button>
+								<button class="dropdown-item" type="button">8</button>
+								<button class="dropdown-item" type="button">9</button>
+							</div>
+						</div>
+					</nav>
+					</div>
 			</div>
 		</div>
-		
 	</div>
-	<footer class=" bg-brand-dark ">
-		 <div class="copyrighttext-left text-white m-2">
+	<footer class=" bg-brand-dark d-none d-sm-block">
+		 <div class="copyright text-left text-white m-2 pl-2">
 				 ©2017 Orcun Studio, Inc.
 		</div>
 	</footer>
-	<script>
-		function topFunction() {
-			document.body.scrollTop = 0;
-			document.documentElement.scrollTop = 0;
-		}
-	</script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -188,12 +198,9 @@
     <!-- jQuery -->
     <script src="js/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+	
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-	<!-- Sly JavaScripts -->
-	<script src="js/sly.min.js"></script>
-	<script src="js/horizontal.js"></script>
-	<script src="js/jquery.easing.js"></script>
 	
 	<!-- Wave JavaScripts -->
 	<script src="js/wave.js"></script>

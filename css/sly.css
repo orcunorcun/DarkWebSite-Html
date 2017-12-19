@@ -1,4 +1,22 @@
-
+.appsin-frame ul li {
+	float: left;
+	width: calc((((100vh - 94px)*0.83)*0.35)*0.72); /* m.i.(0), k.i.(1), */
+	width: -webkit-calc((((100vh - 94px)*0.83)*0.35)*0.72); /* m.c.(1)*3, b.e.(1)*3, b.c.(0)*3, b.o.(1)*3 */
+	width: -moz-calc((((100vh - 94px)*0.83)*0.35)*0.72);
+	height: 100%;
+	margin: 0 1px 0 0;
+	padding: 0;
+	color: #ddd;
+	text-align: center;
+	cursor: pointer;
+}
+/*b.e(1)-->(0)  */
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+	.appsin-frame ul li {
+			width: calc((((100vh - 94px)*0.83)*0.35)*0.72) !important;
+		}
+}}
 /* Frame */
 .frame {
 	height: 100%;
@@ -26,7 +44,21 @@
 	color: #fff;
 	background: #F7931E;
 }
+/* appsin-Frame */
+.appsin-frame {
+	height: 100%;
+	line-height: 100%;
+	overflow: hidden;
+}
+.appsin-frame ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
 
+.appsin-frame ul li.active {
+}
 /* Scrollbar */
 .scrollbar {
 	margin: 0 0 1em 0;
