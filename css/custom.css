@@ -28,13 +28,18 @@ p {
 .body-content {
 	position: relative;
     z-index: 1;
+	height:100%;
 	-webkit-overflow-scrolling: touch;
-	height: calc((100vh - 94px)*0.93);
-	height: -webkit-calc((100vh - 94px)*0.93);
-    height: -moz-calc((100vh - 94px)*0.93);
 	content: '';
     clear: both;
     display: block;
+}
+@media only screen and (min-device-width : 768px) {
+	.body-content {
+	height: calc((100vh - 94px)*0.93);
+	height: -webkit-calc((100vh - 94px)*0.93);
+    height: -moz-calc((100vh - 94px)*0.93);
+}
 }
 
 .box {
@@ -55,9 +60,13 @@ p {
 	overflow: auto;
 }
 .moving-right {
+	height:100%;
+}
+@media only screen and (min-device-width : 768px) {
+	.moving-right {
 	overflow: auto;
 }
-
+}
 footer {
 	position:fixed;
 	bottom:0;
@@ -238,13 +247,20 @@ footer {
 .contain-image {
 	object-fit: contain;
 }
-.apps-top-container {
-	height: 65%;
-	overflow: hidden;
-}
-.apps-bottom-container {
-	height: 35%;
-	overflow: hidden;
+@media only screen and (min-device-width : 768px) {
+	.apps-top-container {
+		height: 65%;
+		overflow: hidden;
+	}
+	.apps-bottom-container {
+		height: 35%;
+		overflow: hidden;
+	}
+	.apps-bottom-container .appsin-frame, .apps-bottom-container .frame {
+		height: calc((((100vh - 94px)*0.83)*0.35)*0.7);
+		height: -webkit-calc((((100vh - 94px)*0.83)*0.35)*0.7);
+		height: -moz-calc((((100vh - 94px)*0.83)*0.35)*0.7);
+	}
 }
 .apps-bottom-container .apps-bottom-header {
 	padding-top:10px;
@@ -253,13 +269,6 @@ footer {
 .apps-bottom-container .scrollbar {
 	height: 1%;
 }
-.apps-bottom-container .appsin-frame, .apps-bottom-container .frame {
-	height: calc((((100vh - 94px)*0.83)*0.35)*0.7);
-	height: -webkit-calc((((100vh - 94px)*0.83)*0.35)*0.7);
-    height: -moz-calc((((100vh - 94px)*0.83)*0.35)*0.7);
-}
-
-
 .red-scrollbar .handle {
 	background: #c1272d !important;
 }
