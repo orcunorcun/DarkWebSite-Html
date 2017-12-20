@@ -12,18 +12,13 @@ html body {
    -webkit-overflow-scrolling: touch;
     
 }
-h1 {
-  font-size: 5.9vw;
-}
-h2 {
-  font-size: 3.0vh;
-}
-p {
-  font-size: 1.7vmin;
-}
-.lead {
-  font-size: 2vmin !important;
-}
+
+   p { 
+      font-size: calc(10px + 0.4vw);
+   }
+.lead { 
+      font-size: calc(12px + 0.4vw);
+   }
 
 .body-content {
 	position: relative;
@@ -51,16 +46,26 @@ p {
 .fixed-left {
 	float: left;
 	height:100%;
+	padding-left: 10px;
+	padding-right: 5px;
+	padding-bottom: 15px;
+	padding-top: 5px;
 }
 .fixed-right {
 	float: right;
 	height:100%;
+	padding-right: 5px;
 }
 .moving-left {
 	overflow: auto;
+	padding-left: 10px;
+	padding-right: 5px;
+	padding-bottom: 15px;
+	padding-top: 5px;
 }
 .moving-right {
 	height:100%;
+	padding-right: 5px;
 }
 @media only screen and (min-device-width : 768px) {
 	.moving-right {
@@ -76,6 +81,11 @@ footer {
 	height: -webkit-calc((100vh - 94px)*0.04);
     height: -moz-calc((100vh - 94px)*0.04);
 	z-index: 3;
+	display:flex;
+	align-items:center;
+}
+.copyright{
+	font-size:70%
 }
 
 #topWave {
@@ -249,26 +259,51 @@ footer {
 }
 @media only screen and (min-device-width : 768px) {
 	.apps-top-container {
-		height: 65%;
+		height: calc((((100vh - 94px)*0.93)*0.55) - 1rem) !important;
+		height: -webkit-calc((((100vh - 94px)*0.93)*0.55) - 1rem) !important;
+		height: -moz-calc((((100vh - 94px)*0.93)*0.55) - 1rem) !important;
 		overflow: hidden;
+		padding-top:5px;
 	}
 	.apps-bottom-container {
-		height: 35%;
+		height: calc(((100vh - 94px)*0.93)*0.45 + 1rem) !important;
+		height: -webkit-calc(((100vh - 94px)*0.93)*0.45 + 1rem) !important;
+		height: -moz-calc(((100vh - 94px)*0.93)*0.45 + 1rem) !important;
 		overflow: hidden;
+		
 	}
 	.apps-bottom-container .appsin-frame, .apps-bottom-container .frame {
-		height: calc((((100vh - 94px)*0.83)*0.35)*0.7);
-		height: -webkit-calc((((100vh - 94px)*0.83)*0.35)*0.7);
-		height: -moz-calc((((100vh - 94px)*0.83)*0.35)*0.7);
+		height: calc((((100vh - 94px)*0.93)*0.45)*0.80) !important;
+		height: -webkit-calc((((100vh - 94px)*0.93)*0.45)*0.80) !important;
+		height: -moz-calc((((100vh - 94px)*0.93)*0.45)*0.80) !important;
+		margin-top: calc((((100vh - 94px)*0.93)*0.45)*0.05) !important;
+		
+	}
+	.apps-bottom-container .apps-bottom-title {
+		height: calc((((100vh - 94px)*0.93)*0.45)*0.08) !important;
+		height: -webkit-calc((((100vh - 94px)*0.93)*0.45)*0.08) !important;
+		height: -moz-calc((((100vh - 94px)*0.93)*0.45)*0.08) !important;
+		display:flex;
+		align-items:flex-end;
+		font-size: calc((((100vh - 94px)*0.93)*0.45)*0.08) !important;
+		font-size: -webkit-calc((((100vh - 94px)*0.93)*0.45)*0.08) !important;
+		font-size: -moz-calc((((100vh - 94px)*0.93)*0.45)*0.08) !important;
+	}
+	.apps-bottom-container .scrollbar {
+		height: calc((((100vh - 94px)*0.93)*0.45)*0.01) !important;
+		height: -webkit-calc((((100vh - 94px)*0.93)*0.45)*0.01) !important;
+		height: -moz-calc((((100vh - 94px)*0.93)*0.45)*0.01) !important;
+		
 	}
 }
-.apps-bottom-container .apps-bottom-header {
-	padding-top:10px;
-	height: 19%;
+.apps-bottom-container .apps-bottom-title {
+	height:80%;
+	font-size: 100%;
 }
 .apps-bottom-container .scrollbar {
-	height: 1%;
+	height:1px;
 }
 .red-scrollbar .handle {
 	background: #c1272d !important;
 }
+

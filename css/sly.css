@@ -2,8 +2,8 @@
 	float: left;
 	width: 200px;
 	height: 200px;
-	margin: 0 1px 0 0;
-	padding: 0;
+	padding: 0 1px 0 0;
+	margin: 0;
 	color: #ddd;
 	text-align: center;
 	cursor: pointer;
@@ -11,15 +11,15 @@
 
 @media only screen and (min-device-width : 768px) {
 	.appsin-frame ul li {
-	width: calc((((100vh - 94px)*0.83)*0.35)*0.72) !important;
-	width: -webkit-calc((((100vh - 94px)*0.83)*0.35)*0.72) !important;
-	width: -moz-calc((((100vh - 94px)*0.83)*0.35)*0.72) !important;
+	width: calc((((100vh - 94px)*0.93)*0.45)*0.80) !important;
+	width: -webkit-calc((((100vh - 94px)*0.93)*0.45)*0.80) !important;
+	width: -moz-calc((((100vh - 94px)*0.93)*0.45)*0.80) !important;
 	height: 100% !important;
 	}
 	@media not all and (min-resolution:.001dpcm)
 	{ @supports (-webkit-appearance:none) {
 		.appsin-frame ul li {
-				width: calc((((100vh - 94px)*0.83)*0.35)*0.72) !important;
+				width: calc((((100vh - 94px)*0.93)*0.45)*0.80) !important;
 				height: 100% !important;
 			}
 	}}
@@ -72,7 +72,6 @@
 }
 /* Scrollbar */
 .scrollbar {
-	margin: 0 0 1em 0;
 	height: 2px;
 	background: #ccc;
 	line-height: 0;
