@@ -10,15 +10,15 @@ html body {
 	flex-direction: column;
 	background-color: #111111;
    -webkit-overflow-scrolling: touch;
-    
 }
 
-   p { 
-      font-size: calc(10px + 0.4vw);
-   }
+p { 
+	font-size: calc(10px + 0.4vw);
+}
+
 .lead { 
-      font-size: calc(12px + 0.4vw);
-   }
+	font-size: calc(12px + 0.4vw);
+}
 
 .body-content {
 	position: relative;
@@ -29,12 +29,13 @@ html body {
     clear: both;
     display: block;
 }
+
 @media only screen and (min-device-width : 768px) {
 	.body-content {
-	height: calc((100vh - 94px)*0.93);
-	height: -webkit-calc((100vh - 94px)*0.93);
-    height: -moz-calc((100vh - 94px)*0.93);
-}
+		height: calc((100vh - 94px)*0.93) !important;
+		height: -webkit-calc((100vh - 94px)*0.93) !important;
+		height: -moz-calc((100vh - 94px)*0.93) !important;
+	}
 }
 
 .box {
@@ -69,23 +70,26 @@ html body {
 }
 @media only screen and (min-device-width : 768px) {
 	.moving-right {
-	overflow: auto;
-}
+		overflow: auto !important;
+	}
+	footer {
+	height: calc((100vh - 94px)*0.04)!important;
+	height: -webkit-calc((100vh - 94px)*0.04)!important;
+	height: -moz-calc((100vh - 94px)*0.04)!important;
+	}
 }
 footer {
 	position:fixed;
 	bottom:0;
 	left:0;
 	right:0;
-	height: calc((100vh - 94px)*0.04);
-	height: -webkit-calc((100vh - 94px)*0.04);
-    height: -moz-calc((100vh - 94px)*0.04);
+	height: 1rem;
 	z-index: 3;
 	display:flex;
 	align-items:center;
 }
 .copyright{
-	font-size:70%
+	font-size:90%
 }
 
 #topWave {
@@ -277,6 +281,7 @@ footer {
 		height: -webkit-calc((((100vh - 94px)*0.93)*0.45)*0.80) !important;
 		height: -moz-calc((((100vh - 94px)*0.93)*0.45)*0.80) !important;
 		margin-top: calc((((100vh - 94px)*0.93)*0.45)*0.05) !important;
+		padding-bottom:0px !important;
 		
 	}
 	.apps-bottom-container .apps-bottom-title {
@@ -296,6 +301,9 @@ footer {
 		
 	}
 }
+.apps-bottom-container .appsin-frame, .apps-bottom-container .frame {
+		padding-bottom: 1rem;
+	}
 .apps-bottom-container .apps-bottom-title {
 	height:80%;
 	font-size: 100%;
