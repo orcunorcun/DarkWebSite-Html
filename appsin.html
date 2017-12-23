@@ -29,16 +29,16 @@
 
 </head>
 
-<body>
+<body class="overflow-hidden bg-black">
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-brand-dark" data-spy="affix" data-offset-top="100">
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark" data-spy="affix" data-offset-top="100">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="d-none d-sm-block">
+			<div class="d-none d-sm-block d-md-block">
 				<img class="contain-image img-fluid w-100" src="img/apps-logo-desktop.png" alt="Card image cap">
 			</div>
-			<div class="d-block d-sm-none">
+			<div class="d-block d-sm-none d-md-none">
 				<img class="contain-image img-fluid w-100" src="img/apps-logo-mobile.png" alt="Card image cap">
 			</div>
 			<div class="collapse navbar-collapse" id="navbarToggler">
@@ -65,21 +65,62 @@
 				</form>
 			</div>
 		</nav>
-		<canvas id="topWave"></canvas>
+		<canvas class="w-100 h-100" id="topWave"></canvas>
 	</header>
 
-	<div class="container-fluid body-content  ">
-		<div class="row box  ">
-			<div class="col-md-3 fixed-left">
-				<div class="h-100 bg-brand-dark text-white rounded-border p-3">
+	<div class="container-fluid body-content h-100">
+		<div class="row box h-100 w-100">
+			<div class="col-md-3 fixed-left pl-2 pr-1 pt-1 pb-3 h-100 overflow-hidden">
+				<div class="h-100 bg-dark text-white rounded-border p-3">
 					<img class="covered-image card-img-top img-fluid" src="img/apps-logo-white.png" alt="Card image cap">
-					<p class="lead text-justify">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-					<hr>
-					<p class="text-justify">It uses utility classes for typography and spacing to space content out within the larger container.</p>
-					<p class="lead"><a class="btn btn-red btn-md" href="#" role="button">Learn more</a></p>
+					<div id="accordion" role="tablist">
+					  <div class="card bg-black">
+						<div class="card-header no-border no-background p-3" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" role="tab" id="headingOne">
+						  <h6 class="mb-0">
+							<a class="text-white">
+							  Description
+							</a>
+						  </h6>
+						</div>
+
+						<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+						  <div class="bg-white text-color-dark card-text p-3">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+						  </div>
+						</div>
+					  </div>
+					  <div class="card bg-black">
+						<div class="card-header no-border no-background p-3" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" role="tab" id="headingTwo">
+						  <h6 class="mb-0">
+							<a class="collapsed text-white">
+							 Requirements
+							</a>
+						  </h6>
+						</div>
+						<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+						  <div class="bg-white text-color-dark card-text p-3">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+						  </div>
+						</div>
+					  </div>
+					  <div class="card bg-black">
+						<div class="card-header no-border no-background p-3" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" role="tab" id="headingThree">
+						  <h6 class="mb-0">
+							<a class="collapsed text-white">
+							  More
+							</a>
+						  </h6>
+						</div>
+						<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+						  <div class="bg-white text-color-dark card-text p-3">
+							Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+						  </div>
+						</div>
+					  </div>
+					</div>
 				</div>
 			</div>
-			<div class="col-md-9 fixed-right  ">
+			<div class="col-md-9 fixed-right h-100 pr-1 overflow-hidden">
 				<div class="apps-top-container pr-3" >
 						<img class="covered-image rounded-border img-fluid h-100 w-100" src="img/sld1.jpg" alt="Card image cap">
 				</div>
@@ -88,12 +129,12 @@
 						<h2 class="col-md-12 text-white apps-bottom-title ">Recent Projects</h2>
 				
 						<div class="scrollbar red-scrollbar">
-							<div class="handle">
+							<div class="handle bg-red">
 								<div class="mousearea"></div>
 							</div>
 						</div>
 					</div>
-					<div class="appsin-frame mr-3 mb-3" id="cyclepages" >
+					<div class="square-frame mr-3 mb-3" id="cyclepages" >
 						<ul class=" ">
 							
 							<li class="apps-bottom-container pb-2 pl-1 pr-1" >
@@ -138,7 +179,7 @@
 			</div>
 		</div>
 	</div>
-	<footer class=" bg-brand-dark">
+	<footer class=" bg-dark">
 		 <div class="copyright text-white pl-2">
 				 ©2017 Orcun Studio, Inc.
 		</div>

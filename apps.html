@@ -23,12 +23,15 @@
 
 	<!-- Corner Ribbon CSS -->
     <link href="css/corner-ribbon.css" rel="stylesheet">
-
+	
+	<!-- Hovered Image CSS -->
+    <link href="css/hovered-image.css" rel="stylesheet">
+	
 </head>
 
-<body>
+<body class="overflow-hidden bg-black">
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-brand-dark" data-spy="affix" data-offset-top="100">
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark" data-spy="affix" data-offset-top="100">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -62,14 +65,14 @@
 				</form>
 			</div>
 		</nav>
-		<canvas id="topWave"></canvas>
+		<canvas class="w-100" id="topWave"></canvas>
 	</header>
 
-	<div class="container-fluid body-content">
-		<div class="row box pb-2 ">
+	<div class="container-fluid body-content h-100">
+		<div class="row box h-100 w-100">
 			<div class="h-100 col-md-3 fixed-left  mt-3 mb-3 ">
-				<div class="h-100 p-3 bg-brand-dark text-white rounded-border ">
-					<img class="covered-image card-img-top img-fluid" src="img/apps-logo-white.png" alt="Card image cap">
+				<div class="h-100 p-3 bg-dark text-white rounded-border ">
+					<img class="covered-image img-fluid rounded-top-border bg-dark" src="img/apps-logo-white.png" alt="Card image cap">
 					<p class="lead text-justify m-3">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
 					<hr class=" p-1">
 					<p class="text-justify m-3">It uses utility classes for typography and spacing to space content out within the larger container.</p>
@@ -171,7 +174,7 @@
 					<nav  data-pagination>
 						<div class="btn-group">
 							<button type="button" class="btn btn-red dropdown-toggle btn-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Page 1</button>
-							<div class="dropdown-menu scrollable-menu">
+							<div class="dropdown-menu">
 								<button class="dropdown-item" type="button">1</button>
 								<button class="dropdown-item" type="button">2</button>
 								<button class="dropdown-item" type="button">3</button>
@@ -188,7 +191,7 @@
 			</div>
 		</div>
 	</div>
-	<footer class=" bg-brand-dark d-none d-sm-block">
+	<footer class=" bg-dark d-none d-sm-block">
 		 <div class="copyright text-left text-white m-2 pl-2">
 				 ©2017 Orcun Studio, Inc.
 		</div>

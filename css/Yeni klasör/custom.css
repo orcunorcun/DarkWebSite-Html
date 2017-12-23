@@ -1,0 +1,317 @@
+html {
+	height: 100%;
+}
+
+html body {
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+   -webkit-overflow-scrolling: touch;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+	
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+	background-color:#1A1A1A;
+}
+
+.body-content {
+	position: relative;
+    z-index: 1;
+	content: '';
+    clear: both;
+    display: block;
+	-webkit-overflow-scrolling: touch;
+}
+
+@media only screen and (min-device-width : 768px) {
+	.body-content {
+		height: calc((100vh - 94px)*0.93) !important;
+		height: -webkit-calc((100vh - 94px)*0.93) !important;
+		height: -moz-calc((100vh - 94px)*0.93) !important;
+	}
+}
+
+.box {
+	position: absolute;
+}
+
+.fixed-left {
+	float: left;
+}
+
+.fixed-right {
+	float: right;
+}
+
+@media only screen and (min-device-width : 768px) {
+	.moving-left {
+		overflow: auto !important;
+	}
+	.moving-right {
+		overflow: auto !important;
+	}
+	footer {
+		height: calc((100vh - 94px)*0.04)!important;
+		height: -webkit-calc((100vh - 94px)*0.04)!important;
+		height: -moz-calc((100vh - 94px)*0.04)!important;
+	}
+}
+
+footer {
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	height: 1rem;
+	z-index: 3;
+	display:flex;
+	align-items:center;
+}
+
+.copyright{
+	font-size:90%
+}
+
+#topWave {
+	height: calc((100vh - 94px)*0.03);
+	height: -webkit-calc((100vh - 94px)*0.03);
+    height: -moz-calc((100vh - 94px)*0.03);
+}
+
+/*------------------------------------------------------------*/
+
+
+.font-size-xs {
+	font-size: calc(5px + 0.4vw) !important;
+}
+
+.font-size-sm {
+	font-size: calc(8px + 0.4vw) !important;
+}
+
+.font-size-md {
+	font-size: calc(11px + 0.4vw) !important;
+}
+
+.font-size-lg {
+	font-size: calc(14px + 0.4vw) !important;
+}
+
+.font-size-xl {
+	font-size: calc(17px + 0.4vw) !important;
+}
+
+.bg-orange {
+	background-color:#F7931E !important;
+}
+
+.bg-dark {
+	background-color:#1A1A1A !important;
+}
+
+.bg-black {
+	background-color:#111111 !important;
+}
+
+.text-color-orange {
+	color:#F7931E !important;
+}
+
+.text-color-dark {
+	color:#1A1A1A !important;
+}
+
+.text-color-red {
+	color:#c1272d !important;
+}
+
+.no-border { 
+	border:none !important;
+}
+
+.no-background {
+	background-color: transparent  !important;
+}
+
+.btn-orange {
+	background-color: #F7931E;
+	color:#fff;
+	border-color: #F7931E;
+}
+
+.btn-orange:hover {
+	color:#F7931E;
+	border-color: #F7931E;
+	background-color: #1A1A1A;
+}
+
+.btn-orange:active {
+	color:#F7931E !important;
+	border-color: #fff !important;
+	background-color: #fff !important;
+}
+
+.btn-red {
+	background-color: #c1272d;
+	color:#fff;
+	border-color: #c1272d;
+}
+
+.btn-red:hover {
+	color:#c1272d;
+	border-color: #c1272d;
+	background-color: #1A1A1A;
+}
+
+.btn-red:active {
+	color:#c1272d !important;
+	border-color: #fff !important;
+	background-color: #fff !important;
+}
+
+.rounded-border {
+	border-radius:20px !important;
+}
+
+.rounded-top-border {
+	border-radius: 20px 20px 0px 0px !important;
+}
+
+.rounded-bottom-border {
+	border-radius: 0px 0px 20px 20px !important;
+}
+/*------------------------------------------------------------*/
+
+
+
+
+.card-body {
+	border-radius:  0px 0px 20px 20px !important;
+	background-color:#fff;
+}
+
+.hovered-image-container {
+    position: relative;
+    width: 100%;
+}
+
+.hovered-image {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	cursor:pointer;
+}
+.hovered-image-text {
+	cursor:pointer;
+}
+
+.hovered-image-middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%)
+}
+
+.hovered-image-container:hover .hovered-image {
+	opacity: 0.3;
+}
+
+.hovered-image-container:hover .hovered-image-middle {
+	opacity: 1;
+}
+
+.hovered-image-text {
+	font-weight: bold;
+	color: white;
+	font-size: 20px;
+	padding: 16px 32px;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.dropdown-menu {
+    min-width: 1rem;
+}
+
+.covered-image {
+    object-fit: cover;
+}
+.contain-image {
+	object-fit: contain;
+}
+@media only screen and (min-device-width : 768px) {
+	.apps-top-container {
+		height: calc((((100vh - 94px)*0.93)*0.55) - 1rem) !important;
+		height: -webkit-calc((((100vh - 94px)*0.93)*0.55) - 1rem) !important;
+		height: -moz-calc((((100vh - 94px)*0.93)*0.55) - 1rem) !important;
+		overflow: hidden;
+		padding-top:5px;
+	}
+	.apps-bottom-container {
+		height: calc(((100vh - 94px)*0.93)*0.45 + 1rem) !important;
+		height: -webkit-calc(((100vh - 94px)*0.93)*0.45 + 1rem) !important;
+		height: -moz-calc(((100vh - 94px)*0.93)*0.45 + 1rem) !important;
+		overflow: hidden;
+		
+	}
+	.apps-bottom-container .appsin-frame, .apps-bottom-container .frame {
+		height: calc((((100vh - 94px)*0.93)*0.45)*0.80) !important;
+		height: -webkit-calc((((100vh - 94px)*0.93)*0.45)*0.80) !important;
+		height: -moz-calc((((100vh - 94px)*0.93)*0.45)*0.80) !important;
+		margin-top: calc((((100vh - 94px)*0.93)*0.45)*0.05) !important;
+		padding-bottom:0px !important;
+		
+	}
+	.apps-bottom-container .apps-bottom-title {
+		height: calc((((100vh - 94px)*0.93)*0.45)*0.08) !important;
+		height: -webkit-calc((((100vh - 94px)*0.93)*0.45)*0.08) !important;
+		height: -moz-calc((((100vh - 94px)*0.93)*0.45)*0.08) !important;
+		display:flex;
+		align-items:flex-end;
+		font-size: calc((((100vh - 94px)*0.93)*0.45)*0.08) !important;
+		font-size: -webkit-calc((((100vh - 94px)*0.93)*0.45)*0.08) !important;
+		font-size: -moz-calc((((100vh - 94px)*0.93)*0.45)*0.08) !important;
+	}
+	.apps-bottom-container .scrollbar {
+		height: calc((((100vh - 94px)*0.93)*0.45)*0.01) !important;
+		height: -webkit-calc((((100vh - 94px)*0.93)*0.45)*0.01) !important;
+		height: -moz-calc((((100vh - 94px)*0.93)*0.45)*0.01) !important;
+		
+	}
+}
+.apps-bottom-container .appsin-frame, .apps-bottom-container .frame {
+		padding-bottom: 1rem;
+	}
+.apps-bottom-container .apps-bottom-title {
+	height:80%;
+	font-size: 100%;
+}
+.apps-bottom-container .scrollbar {
+	height:1px;
+}
+.red-scrollbar .handle {
+	background: #c1272d !important;
+}
+

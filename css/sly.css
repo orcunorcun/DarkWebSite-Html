@@ -1,4 +1,4 @@
-.appsin-frame ul li {
+.square-frame ul li {
 	float: left;
 	width: 200px;
 	height: 200px;
@@ -10,7 +10,7 @@
 }
 
 @media only screen and (min-device-width : 768px) {
-	.appsin-frame ul li {
+	.square-frame ul li {
 	width: calc((((100vh - 94px)*0.93)*0.45)*0.80) !important;
 	width: -webkit-calc((((100vh - 94px)*0.93)*0.45)*0.80) !important;
 	width: -moz-calc((((100vh - 94px)*0.93)*0.45)*0.80) !important;
@@ -18,7 +18,7 @@
 	}
 	@media not all and (min-resolution:.001dpcm)
 	{ @supports (-webkit-appearance:none) {
-		.appsin-frame ul li {
+		.square-frame ul li {
 				width: calc((((100vh - 94px)*0.93)*0.45)*0.80) !important;
 				height: 100% !important;
 			}
@@ -55,20 +55,20 @@
 	color: #fff;
 	background: #F7931E;
 }
-/* appsin-Frame */
-.appsin-frame {
+/* square-Frame */
+.square-frame {
 	height: 100%;
 	line-height: 100%;
 	overflow: hidden;
 }
-.appsin-frame ul {
+.square-frame ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	height: 100%;
 }
 
-.appsin-frame ul li.active {
+.square-frame ul li.active {
 }
 /* Scrollbar */
 .scrollbar {
