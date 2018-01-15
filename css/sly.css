@@ -9,17 +9,19 @@
 	cursor: pointer;
 }
 
-@media only screen and (min-device-width : 768px) {
+@media only screen and (min-width: 64.063em) {
 	.square-frame ul li {
-	width: calc((((100vh - 94px)*0.93)*0.45)*0.80) !important;
-	width: -webkit-calc((((100vh - 94px)*0.93)*0.45)*0.80) !important;
-	width: -moz-calc((((100vh - 94px)*0.93)*0.45)*0.80) !important;
+	width: calc((((100vh - 120px)*0.96)*0.4)*0.8) !important;
+	width: -webkit-calc((((100vh - 120px)*0.96)*0.4)*0.8) !important;
+	width: -moz-calc((((100vh - 120px)*0.96)*0.4)*0.8) !important;
 	height: 100% !important;
 	}
 	@media not all and (min-resolution:.001dpcm)
 	{ @supports (-webkit-appearance:none) {
 		.square-frame ul li {
-				width: calc((((100vh - 94px)*0.93)*0.45)*0.80) !important;
+				width: calc((((100vh - 120px)*0.96)*0.4)*0.8) !important;
+				width: -webkit-calc((((100vh - 120px)*0.96)*0.4)*0.8) !important;
+				width: -moz-calc((((100vh - 120px)*0.96)*0.4)*0.8) !important;
 				height: 100% !important;
 			}
 	}}

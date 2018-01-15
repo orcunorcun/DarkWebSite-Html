@@ -17,8 +17,8 @@ var jj=0;
 var increase = Math.PI /90+wid;
 var topWave = document.getElementById("topWave")
 topWave.width = window.innerWidth;
-topWave.height = (window.innerHeight/100)*3;
-var withi = window.innerWidth/5
+topWave.height = 24;
+var withi = window.innerWidth/5;
 	for ( i = 0; i <=withi; i ++ ) 
 	{
 		x = i;

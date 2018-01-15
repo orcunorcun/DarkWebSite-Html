@@ -31,14 +31,14 @@
 
 <body class="overflow-hidden bg-black">
 	<header>
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark" data-spy="affix" data-offset-top="100">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" data-spy="affix" data-offset-top="100">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="d-none d-sm-block">
+			<div class="d-none d-xs-block d-sm-block d-lg-block">
 				<img class="contain-image img-fluid w-100" src="img/apps-logo-desktop.png" alt="Card image cap">
 			</div>
-			<div class="d-block d-sm-none">
+			<div class="d-block d-xs-none d-sm-none d-lg-none">
 				<img class="contain-image img-fluid w-100" src="img/apps-logo-mobile.png" alt="Card image cap">
 			</div>
 			<div class="collapse navbar-collapse" id="navbarToggler">
@@ -69,108 +69,130 @@
 	</header>
 
 	<div class="container-fluid body-content h-100">
-		<div class="row box h-100 w-100">
-			<div class="h-100 col-md-3 fixed-left  mt-3 mb-3 ">
+		<div class="row box w-100">
+			<div class="col-lg-3 fixed-left pl-2 pr-1 pt-1 pb-3 h-100 overflow-hidden">
 				<div class="h-100 p-3 bg-dark text-white rounded-border ">
 					<img class="covered-image img-fluid rounded-top-border bg-dark" src="img/apps-logo-white.png" alt="Card image cap">
-					<p class="lead text-justify m-3">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-					<hr class=" p-1">
-					<p class="text-justify m-3">It uses utility classes for typography and spacing to space content out within the larger container.</p>
+					<p class="lead text-justify m-3 font-size-md">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+					<hr class="p-1">
+					<p class="text-justify m-3 font-size-sm">It uses utility classes for typography and spacing to space content out within the larger container.</p>
 					<p class="lead">
-						<a class="btn btn-red btn-lg m-3" href="#" role="button">Learn more</a>
+						<a class="btn btn-red btn-md m-3" href="#" role="button">Learn more</a>
 					</p>
 				</div>
 			</div>
-			<div class="h-100 col-md-9 moving-right mt-3 mb-3">
+			<div class="h-100 col-lg-9 moving-right">
 				<div class="row clearfix">
 					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3  rounded-border">
 						<a href="appsin.html">
 							<div class="ribbon"><span>MOBILE</span></div>
 							<img src="img/lg-1.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
 							<div class="hovered-image-middle">
-								<div class="hovered-image-text">Project 1</div>
+								<div class="hovered-image-text text-center font-size-md">Project 1</div>
 							</div>
 						</a>
 					</div>
 					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3 rounded-border">
-						<div class="ribbon"><span>DESKTOP</span></div>
-						<img src="img/lg-2.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
-						<div class="hovered-image-middle">
-							<div class="hovered-image-text">Project 2</div>
-						</div>
+						<a href="appsin.html">
+							<div class="ribbon"><span>DESKTOP</span></div>
+							<img src="img/lg-2.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
+							<div class="hovered-image-middle">
+								<div class="hovered-image-text text-center font-size-md">Project 2</div>
+							</div>
+						</a>
 					</div>
 					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3 rounded-border">
-						<div class="ribbon"><span>WEB</span></div>
-						<img src="img/lg-3.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
-						<div class="hovered-image-middle">
-							<div class="hovered-image-text">Project 3</div>
-						</div>
+						<a href="appsin.html">
+							<div class="ribbon"><span>WEB</span></div>
+							<img src="img/lg-3.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
+							<div class="hovered-image-middle">
+								<div class="hovered-image-text text-center font-size-md">Project 3</div>
+							</div>
+						</a>
 					</div>
 					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3  rounded-border">
-						<div class="ribbon"><span>MOBILE</span></div>
-						<img src="img/lg-1.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
-						<div class="hovered-image-middle">
-							<div class="hovered-image-text">Project 4</div>
-						</div>
+						<a href="appsin.html">
+							<div class="ribbon"><span>MOBILE</span></div>
+							<img src="img/lg-1.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
+							<div class="hovered-image-middle">
+								<div class="hovered-image-text text-center font-size-md">Project 4</div>
+							</div>
+						</a>
 					</div>
 					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3 rounded-border">
-						<div class="ribbon"><span>DESKTOP</span></div>
-						<img src="img/lg-2.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
-						<div class="hovered-image-middle">
-							<div class="hovered-image-text">Project 5</div>
-						</div>
+						<a href="appsin.html">
+							<div class="ribbon"><span>DESKTOP</span></div>
+							<img src="img/lg-2.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
+							<div class="hovered-image-middle">
+								<div class="hovered-image-text text-center font-size-md">Project 5</div>
+							</div>
+						</a>
 					</div>
 					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3 rounded-border">
-						<div class="ribbon"><span>WEB</span></div>
-						<img src="img/lg-3.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
-						<div class="hovered-image-middle">
-							<div class="hovered-image-text">Project 6</div>
-						</div>
+						<a href="appsin.html">
+							<div class="ribbon"><span>WEB</span></div>
+							<img src="img/lg-3.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
+							<div class="hovered-image-middle">
+								<div class="hovered-image-text text-center font-size-md">Project 6</div>
+							</div>
+						</a>
 					</div>
 					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3  rounded-border">
-						<div class="ribbon"><span>MOBILE</span></div>
-						<img src="img/lg-1.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
-						<div class="hovered-image-middle">
-							<div class="hovered-image-text">Project 7</div>
-						</div>
+						<a href="appsin.html">
+							<div class="ribbon"><span>MOBILE</span></div>
+							<img src="img/lg-1.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
+							<div class="hovered-image-middle">
+								<div class="hovered-image-text text-center font-size-md">Project 7</div>
+							</div>
+						</a>
 					</div>
 					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3 rounded-border">
-						<div class="ribbon"><span>DESKTOP</span></div>
-						<img src="img/lg-2.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
-						<div class="hovered-image-middle">
-							<div class="hovered-image-text">Project 8</div>
-						</div>
+						<a href="appsin.html">
+							<div class="ribbon"><span>DESKTOP</span></div>
+							<img src="img/lg-2.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
+							<div class="hovered-image-middle">
+								<div class="hovered-image-text text-center font-size-md">Project 8</div>
+							</div>
+						</a>
 					</div>
 					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3 rounded-border">
-						<div class="ribbon"><span>WEB</span></div>
-						<img src="img/lg-3.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
-						<div class="hovered-image-middle">
-							<div class="hovered-image-text">Project 9</div>
-						</div>
+						<a href="appsin.html">
+							<div class="ribbon"><span>WEB</span></div>
+							<img src="img/lg-3.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
+							<div class="hovered-image-middle">
+								<div class="hovered-image-text text-center font-size-md">Project 9</div>
+							</div>
+						</a>
 					</div>
 					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3  rounded-border">
-						<div class="ribbon"><span>MOBILE</span></div>
-						<img src="img/lg-1.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
-						<div class="hovered-image-middle">
-							<div class="hovered-image-text">Project 10</div>
-						</div>
+						<a href="appsin.html">
+							<div class="ribbon"><span>MOBILE</span></div>
+							<img src="img/lg-1.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
+							<div class="hovered-image-middle">
+								<div class="hovered-image-text text-center font-size-md">Project 10</div>
+							</div>
+						</a>
 					</div>
 					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3 rounded-border">
-						<div class="ribbon"><span>DESKTOP</span></div>
-						<img src="img/lg-2.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
-						<div class="hovered-image-middle">
-							<div class="hovered-image-text">Project 11</div>
-						</div>
+						<a href="appsin.html">
+							<div class="ribbon"><span>DESKTOP</span></div>
+							<img src="img/lg-2.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
+							<div class="hovered-image-middle">
+								<div class="hovered-image-text text-center font-size-md">Project 11</div>
+							</div>
+						</a>
 					</div>
 					<div class="hovered-image-container col-lg-3 col-md-4 m-0 p-3 rounded-border">
-						<div class="ribbon"><span>WEB</span></div>
-						<img src="img/lg-3.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
-						<div class="hovered-image-middle">
-							<div class="hovered-image-text">Project 12</div>
-						</div>
+						<a href="appsin.html">
+							<div class="ribbon"><span>WEB</span></div>
+							<img src="img/lg-3.png" alt="image1" class="covered-image hovered-image rounded-border w-100">
+							<div class="hovered-image-middle">
+								<div class="hovered-image-text text-center font-size-md">Project 12</div>
+							</div>
+						</a>
 					</div>
 				</div>
-				<div class="d-flex justify-content-center p-3">
+				<div class="d-flex justify-content-center p-3 mb-3">
 					<nav  data-pagination>
 						<div class="btn-group">
 							<button type="button" class="btn btn-red dropdown-toggle btn-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Page 1</button>
