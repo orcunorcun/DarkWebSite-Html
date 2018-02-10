@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-hidden">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,8 +28,7 @@
     <link href="css/corner-ribbon.css" rel="stylesheet">
 
 </head>
-
-<body class="overflow-hidden bg-black">
+<body class="bg-black">
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" data-spy="affix" data-offset-top="100">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +41,7 @@
 				<img class="contain-image img-fluid w-100" src="img/apps-logo-mobile.png" alt="Card image cap">
 			</div>
 			<div class="collapse navbar-collapse" id="navbarToggler">
-				<ul class="navbar-nav mr-auto mt-lg-0">
+				<ul class="navbar-nav mr-auto mt-lg-0 font-size-sm">
 					<li class="nav-item">
 						<a class="nav-link" href="index.html">Home</a>
 					</li>
@@ -60,39 +59,48 @@
 					</li>
 				</ul>
 				<form class="form-inline my-2 my-lg-0">
-				  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-					<a class="btn btn-red" href="#" role="button">Search</a>
+				  <input class="form-control input-shadow mr-sm-2 font-size-sm" type="search" placeholder="Search" aria-label="Search">
+					<a class="btn btn-red font-size-sm" href="#" role="button">Search</a>
 				</form>
 			</div>
 		</nav>
-		<canvas class="w-100" id="topWave"></canvas>
+		<canvas class="topWave" id="topWave"></canvas>
 	</header>
-
-	<div class="container-fluid body-content h-100">
-		<div class="row box w-100">
-			<div class="col-lg-3 fixed-left pl-2 pr-1 pt-1 pb-3 h-100 overflow-hidden">
-				<div class="h-100 bg-dark text-white rounded-border p-3">
-					<img class="covered-image card-img-top img-fluid" src="img/apps-logo-white.png" alt="Card image cap">
-					<div class="btn-group-vertical w-100" role="group" aria-label="Basic example">
-						<button type="button" class="left-button btn btn-black btn-lg btn-bloc mt-1 font-size-md cursor-pointer" data-toggle="modal" data-target="#descriptionModal"><b>Description</b></button>
-						<button type="button" class="left-button btn btn-black btn-lg btn-bloc mt-1 font-size-md cursor-pointer" data-toggle="modal" data-target="#requirementsModal"><b>Requirements</b></button>
-						<button type="button" class="left-button btn btn-black btn-lg btn-bloc mt-1 font-size-md cursor-pointer" data-toggle="modal" data-target="#moreModal"><b>More</b></button>
+	
+	
+	
+	<div class="main row m-0 p-0 h-100">
+		<div class="h-100 col-lg-3 m-0 p-2">
+			<div class="h-100 bg-dark text-white rounded-border p-3 d-flex flex-column">
+				<div class="h-20 d-flex justify-content-center align-items-center">
+					<img class="contain-image img-fluid rounded-top-border h-100 w-100" src="img/apps-logo-white.png" alt="Card image cap"/>
+				</div>
+				<div class="overflow-auto pl-3 pr-3 h-50 d-flex flex-column justify-content-center">
+					<p class="text-justify font-size-sm">This is a simple hero unit, a simple <a class="text-color-red">jumbotron-style component</a> for calling extra attention to featured content or information.</p>
+					<p class="text-justify font-size-sm">It uses utility <a class="text-color-red">classes for typography</a> and spacing to space content out within the larger container.</p>
+				</div>
+				<div class="h-30 d-flex pl-3 pr-3">
+					<div class="btn-group-vertical w-100 h-100 align-self-center" role="group" aria-label="Basic example">
+						<button type="button" class="btn btn-shadow btn-md text-color-red font-size-sm font-weight-bold cursor-pointer mb-1" data-toggle="modal" data-target="#descriptionModal"><b>Description</b></button>
+						<button type="button" class="btn btn-shadow btn-md text-color-red font-size-sm font-weight-bold cursor-pointer mb-1" data-toggle="modal" data-target="#requirementsModal"><b>Requirements</b></button>
+						<button type="button" class="btn btn-shadow btn-md text-color-red font-size-sm font-weight-bold cursor-pointer mb-1" data-toggle="modal" data-target="#moreModal"><b>More</b></button>
 						
 						<!-- Description Modal -->
 						<div class="modal fade" id="descriptionModal" tabindex="-1" role="dialog" aria-labelledby="descriptionModalTitle" aria-hidden="true">
 						  <div class="modal-dialog" role="document">
-							<div class="modal-content">
-							  <div class="modal-header">
-								<h5 class="modal-title text-color-dark font-size-md" id="descriptionModalTitle">Description Modal Title</h5>
+							<div class="modal-content bg-dark">
+							  <div class="modal-header bg-dark">
+								<h5 class="modal-title text-color-red font-weight-bold font-size-md" id="descriptionModalTitle">Description Modal Title</h5>
 								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 								  <span aria-hidden="true">&times;</span>
 								</button>
 							  </div>
-							  <div class="modal-body text-color-dark font-size-sm">
-								Description Modal
+							  <div class="modal-body text-white font-size-sm bg-shadow">
+								<b>Description Modal</b>
+								It uses utility classes for typography and spacing to space <b>content</b> out within the larger container
 							  </div>
 							  <div class="modal-footer">
-								<button type="button" class="btn btn-black cursor-pointer" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-shadow text-color-red font-size-sm font-weight-bold cursor-pointer" data-dismiss="modal">Close</button>
 							  </div>
 							</div>
 						  </div>
@@ -100,18 +108,19 @@
 						<!-- Requirements Modal -->
 						<div class="modal fade" id="requirementsModal" tabindex="-1" role="dialog" aria-labelledby="requirementsModalTitle" aria-hidden="true">
 						  <div class="modal-dialog" role="document">
-							<div class="modal-content">
-							  <div class="modal-header">
-								<h5 class="modal-title text-color-dark font-size-md" id="requirementsModalTitle">Requirements Modal Title</h5>
+							<div class="modal-content bg-dark">
+							  <div class="modal-header bg-dark">
+								<h5 class="modal-title text-color-red font-weight-bold font-size-md" id="requirementsModalTitle">Requirements Modal Title</h5>
 								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 								  <span aria-hidden="true">&times;</span>
 								</button>
 							  </div>
-							  <div class="modal-body text-color-dark font-size-sm">
-								Requirements Modal
+							  <div class="modal-body text-white font-size-sm bg-shadow">
+								<b>Requirements Modal</b>
+								It uses utility classes for typography and spacing to space <b>content</b> out within the larger container
 							  </div>
 							  <div class="modal-footer">
-								<button type="button" class="btn btn-black cursor-pointer" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-shadow text-color-red font-size-sm font-weight-bold cursor-pointer" data-dismiss="modal">Close</button>
 							  </div>
 							</div>
 						  </div>
@@ -119,35 +128,35 @@
 						<!-- More Modal -->
 						<div class="modal fade" id="moreModal" tabindex="-1" role="dialog" aria-labelledby="moreModalTitle" aria-hidden="true">
 						  <div class="modal-dialog" role="document">
-							<div class="modal-content">
-							  <div class="modal-header">
-								<h5 class="modal-title text-color-dark font-size-md" id="moreModalTitle">More Modal Title</h5>
+							<div class="modal-content bg-dark">
+							  <div class="modal-header bg-dark">
+								<h5 class="modal-title text-color-red font-weight-bold font-size-md" id="moreModalTitle">More Modal Title</h5>
 								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 								  <span aria-hidden="true">&times;</span>
 								</button>
 							  </div>
-							  <div class="modal-body text-color-dark font-size-sm">
-								More Modal
+							  <div class="modal-body text-white font-size-sm bg-shadow">
+								<b>More Modal</b>
+								It uses utility classes for typography and spacing to space <b>content</b> out within the larger container
 							  </div>
 							  <div class="modal-footer">
-								<button type="button" class="btn btn-black cursor-pointer" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-shadow text-color-red font-size-sm font-weight-bold cursor-pointer" data-dismiss="modal">Close</button>
 							  </div>
 							</div>
 						  </div>
 						</div>
-						
-						
-						
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-9 fixed-right h-100 pr-1 overflow-hidden">
-				<div class="apps-top-container pr-3" >
+		</div>
+		<div class="h-100 col-lg-9 m-0 p-0">
+				<div class="h-60 pt-2 pr-2 pl-1 pr-1" >
 						<img class="covered-image rounded-border img-fluid h-100 w-100" src="img/sld1.jpg" alt="Card image cap">
 				</div>
-				<div class="apps-bottom-container " >
-					<div class="m-3 ">
-						<h2 class="col-lg-12 text-white apps-bottom-title ">Recent Projects</h2>
+				<div class="h-40 pr-2" >
+					<div class="square-frame-top h-20 d-flex p-2">
+					<div class="align-self-center w-100">
+						<h2 class="col-lg-12 text-white apps-bottom-title  font-size-md">Pictures</h2>
 				
 						<div class="scrollbar red-scrollbar">
 							<div class="handle bg-red">
@@ -155,59 +164,54 @@
 							</div>
 						</div>
 					</div>
-					<div class="square-frame mr-3 mb-3" id="cyclepages" >
-						<ul class=" ">
-							
+					</div>
+					<div class="square-frame h-80" id="cyclepages" >
+						<ul>
 							<li class="apps-bottom-container pb-2 pl-1 pr-1" >
-									<img class="covered-image rounded-border img-fluid h-100 w-100" src="img/lg-1.png" alt="Card image cap">
+									<img class="covered-image rounded-border img-fluid h-100 w-100" src="img/lg-2.png" alt="Card image cap">
 							</li>
 							<li class="apps-bottom-container pb-2 pl-1 pr-1" >
 									<img class="covered-image rounded-border img-fluid h-100 w-100" src="img/lg-2.png" alt="Card image cap">
 							</li>
 							<li class="apps-bottom-container pb-2 pl-1 pr-1" >
-									<img class="covered-image rounded-border img-fluid h-100 w-100" src="img/lg-3.png" alt="Card image cap">
-							</li>
-							<li class="apps-bottom-container pb-2 pl-1 pr-1" >
-									<img class="covered-image rounded-border img-fluid h-100 w-100" src="img/lg-1.png" alt="Card image cap">
+									<img class="covered-image rounded-border img-fluid h-100 w-100" src="img/lg-2.png" alt="Card image cap">
 							</li>
 							<li class="apps-bottom-container pb-2 pl-1 pr-1" >
 									<img class="covered-image rounded-border img-fluid h-100 w-100" src="img/lg-2.png" alt="Card image cap">
 							</li>
 							<li class="apps-bottom-container pb-2 pl-1 pr-1" >
-									<img class="covered-image rounded-border img-fluid h-100 w-100" src="img/lg-3.png" alt="Card image cap">
-							</li>
-							<li class="apps-bottom-container pb-2 pl-1 pr-1" >
-									<img class="covered-image rounded-border img-fluid h-100 w-100" src="img/lg-1.png" alt="Card image cap">
+									<img class="covered-image rounded-border img-fluid h-100 w-100" src="img/lg-2.png" alt="Card image cap">
 							</li>
 							<li class="apps-bottom-container pb-2 pl-1 pr-1" >
 									<img class="covered-image rounded-border img-fluid h-100 w-100" src="img/lg-2.png" alt="Card image cap">
 							</li>
 							<li class="apps-bottom-container pb-2 pl-1 pr-1" >
-									<img class="covered-image rounded-border img-fluid h-100 w-100" src="img/lg-3.png" alt="Card image cap">
-							</li>
-							<li class="apps-bottom-container pb-2 pl-1 pr-1" >
-									<img class="covered-image rounded-border img-fluid h-100 w-100" src="img/lg-1.png" alt="Card image cap">
+									<img class="covered-image rounded-border img-fluid h-100 w-100" src="img/lg-2.png" alt="Card image cap">
 							</li>
 							<li class="apps-bottom-container pb-2 pl-1 pr-1" >
 									<img class="covered-image rounded-border img-fluid h-100 w-100" src="img/lg-2.png" alt="Card image cap">
 							</li>
 							<li class="apps-bottom-container pb-2 pl-1 pr-1" >
-									<img class="covered-image rounded-border img-fluid h-100 w-100" src="img/lg-3.png" alt="Card image cap">
+									<img class="covered-image rounded-border img-fluid h-100 w-100" src="img/lg-2.png" alt="Card image cap">
+							</li>
+							<li class="apps-bottom-container pb-2 pl-1 pr-1" >
+									<img class="covered-image rounded-border img-fluid h-100 w-100" src="img/lg-2.png" alt="Card image cap">
+							</li>
+							<li class="apps-bottom-container pb-2 pl-1 pr-1" >
+									<img class="covered-image rounded-border img-fluid h-100 w-100" src="img/lg-2.png" alt="Card image cap">
+							</li>
+							<li class="apps-bottom-container pb-2 pl-1 pr-1" >
+									<img class="covered-image rounded-border img-fluid h-100 w-100" src="img/lg-2.png" alt="Card image cap">
 							</li>
 						</ul>
 					</div>
 				</div>
-			</div>
 		</div>
 	</div>
-	<footer class=" bg-dark">
-		 <div class="copyright text-white pl-2">
-				 ©2017 Orcun Studio, Inc.
-		</div>
+	
+	<footer class="bg-dark d-flex">
+		<div class="copyright text-white pl-2 font-size-sm align-self-center">©2017 Orcun Studio, Inc.</div>
 	</footer>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
 
     <!-- jQuery -->
     <script src="js/jquery-3.2.1.min.js"></script>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="Orçun Toy">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Orcun Studio</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+	
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	
+	 <!-- Sly CSS -->
+    <link href="css/sly.css" rel="stylesheet">
+
+</head>
+
+<body class="overflow-hidden bg-black">
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" data-spy="affix" data-offset-top="100">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		 
+		  <div class="d-none d-xs-block d-sm-block d-lg-block">
+		  <img class="contain-image img-fluid w-100" src="img/studio-logo-desktop.png" alt="Card image cap">
+		  </div>
+		  <div class="d-block d-xs-none d-sm-none d-lg-none">
+		   <img class="contain-image img-fluid w-100" src="img/studio-logo-mobile.png" alt="Card image cap">
+		 
+		  </div>
+
+		  <div class="collapse navbar-collapse" id="navbarToggler">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+			  <li class="nav-item active">
+				<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="apps.html">Apps</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Design</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">About Us</a>
+			  </li>
+			    <li class="nav-item">
+				<a class="nav-link" href="#">Contact</a>
+			  </li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+			  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<a class="btn btn-orange" href="#" role="button">Search</a>
+			</form>
+		  </div>
+		  
+		</nav>
+			<canvas class="w-100" id="topWave"></canvas>
+		
+		
+	</header>
+
+	<div class="container-fluid body-content h-100">
+	
+		<div class="row box w-100">
+			
+			<div class="col-lg-3 fixed-left pl-2 pr-1 pb-3 h-100 overflow-hidden">
+				<div class="h-100 p-3 bg-dark text-white rounded-border ">
+					<img class="covered-image img-fluid rounded-top-border bg-dark" src="img/apps-logo-white.png" alt="Card image cap">
+					<p class="lead text-justify m-3 font-size-md">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+					<hr class=" p-1">
+					<p class="text-justify m-3 font-size-sm">It uses utility classes for typography and spacing to space content out within the larger container.</p>
+					<p class="lead">
+						<a class="btn btn-orange btn-md m-3" href="#" role="button">Learn more</a>
+					</p>
+				</div>
+			</div>
+			<div class="h-100 col-lg-9 moving-right">
+				<div class="row clearfix">
+					<div class="card-deck ml-1 mr-1">
+					  <div class="card no-border rounded-border">
+						<img class="covered-image img-fluid rounded-top-border bg-dark" src="img/lg-1.png" alt="Card image cap">
+						<div class="rounded-bottom-border bg-white p-3">
+						  <h4 class="card-title">Orcun Studio</h4>
+						  <p class="card-text text-justify">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						</div>
+						
+					  </div>
+					  <div class="card no-border rounded-border">
+						<img class="covered-image img-fluid rounded-top-border bg-dark" src="img/lg-2.png" alt="Card image cap">
+						<div class="rounded-bottom-border bg-white p-3">
+						  <h4 class="card-title">Orcun Apps</h4>
+						  <p class="card-text text-justify">This card has supporting text below as a natural lead-in to additional content.</p>
+						</div>
+						
+					  </div>
+					  <div class="card no-border rounded-border">
+						<img class="covered-image img-fluid rounded-top-border bg-dark" src="img/lg-3.png" alt="Card image cap">
+						<div class="rounded-bottom-border bg-white p-3">
+						  <h4 class="card-title">Orcun Design</h4>
+						  <p class="card-text text-justify">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+						</div>
+					  </div>
+					</div>
+				</div>
+				<div class="mr-1">
+					<div class="m-3 ">
+						<h2 class="col-md-12 text-white apps-bottom-title ">Recent Projects</h2>
+				
+						<div class="scrollbar orange-scrollbar">
+							<div class="handle bg-orange">
+								<div class="mousearea"></div>
+							</div>
+						</div>
+					</div>
+					<div class="frame mb-3 pb-3" id="cyclepages">
+						<ul class="clearfix">
+							<li class="m-1">
+								<figure class="figure m-0">
+								  <img src="img/lg-1.png" class="covered-image figure-img img-fluid " alt="A generic square placeholder image with corners in a figure.">
+								  <figcaption class="figure-caption bg-dark p-2 text-center ">A caption for the above image.</figcaption>
+								</figure>
+							</li>
+							<li class="m-1">
+								<figure class="figure m-0">
+								  <img src="img/lg-2.png" class="covered-image figure-img img-fluid " alt="A generic square placeholder image with corners in a figure.">
+								  <figcaption class="figure-caption bg-dark p-2 text-center ">A caption for the above image.</figcaption>
+								</figure>
+							</li>
+							<li class="m-1">
+								<figure class="figure m-0">
+								  <img src="img/lg-3.png" class="covered-image figure-img img-fluid " alt="A generic square placeholder image with corners in a figure.">
+								  <figcaption class="figure-caption bg-dark p-2 text-center ">A caption for the above image.</figcaption>
+								</figure>
+							</li>
+							<li class="m-1">
+								<figure class="figure m-0">
+								  <img src="img/lg-1.png" class="covered-image figure-img img-fluid " alt="A generic square placeholder image with corners in a figure.">
+								  <figcaption class="figure-caption bg-dark p-2 text-center ">A caption for the above image.</figcaption>
+								</figure>
+							</li>
+							<li class="m-1">
+								<figure class="figure m-0">
+								  <img src="img/lg-2.png" class="covered-image figure-img img-fluid " alt="A generic square placeholder image with corners in a figure.">
+								  <figcaption class="figure-caption bg-dark p-2 text-center ">A caption for the above image.</figcaption>
+								</figure>
+							</li>
+							<li class="m-1">
+								<figure class="figure m-0">
+								  <img src="img/lg-3.png" class="covered-image figure-img img-fluid " alt="A generic square placeholder image with corners in a figure.">
+								  <figcaption class="figure-caption bg-dark p-2 text-center ">A caption for the above image.</figcaption>
+								</figure>
+							</li>
+							<li class="m-1">
+								<figure class="figure m-0">
+								  <img src="img/lg-1.png" class="covered-image figure-img img-fluid " alt="A generic square placeholder image with corners in a figure.">
+								  <figcaption class="figure-caption bg-dark p-2 text-center ">A caption for the above image.</figcaption>
+								</figure>
+							</li>
+							<li class="m-1">
+								<figure class="figure m-0">
+								  <img src="img/lg-2.png" class="covered-image figure-img img-fluid " alt="A generic square placeholder image with corners in a figure.">
+								  <figcaption class="figure-caption bg-dark p-2 text-center ">A caption for the above image.</figcaption>
+								</figure>
+							</li>
+							<li class="m-1">
+								<figure class="figure m-0">
+								  <img src="img/lg-3.png" class="covered-image figure-img img-fluid " alt="A generic square placeholder image with corners in a figure.">
+								  <figcaption class="figure-caption bg-dark p-2 text-center ">A caption for the above image.</figcaption>
+								</figure>
+							</li>
+							<li class="m-1">
+								<figure class="figure m-0">
+								  <img src="img/lg-1.png" class="covered-image figure-img img-fluid " alt="A generic square placeholder image with corners in a figure.">
+								  <figcaption class="figure-caption bg-dark p-2 text-center ">A caption for the above image.</figcaption>
+								</figure>
+							</li>
+							<li class="m-1">
+								<figure class="figure m-0">
+								  <img src="img/lg-2.png" class="covered-image figure-img img-fluid " alt="A generic square placeholder image with corners in a figure.">
+								  <figcaption class="figure-caption bg-dark p-2 text-center ">A caption for the above image.</figcaption>
+								</figure>
+							</li>
+							<li class="m-1">
+								<figure class="figure m-0">
+								  <img src="img/lg-3.png" class="covered-image figure-img img-fluid " alt="A generic square placeholder image with corners in a figure.">
+								  <figcaption class="figure-caption bg-dark p-2 text-center ">A caption for the above image.</figcaption>
+								</figure>
+							</li>
+							<li class="m-1">
+								<figure class="figure m-0">
+								  <img src="img/lg-1.png" class="covered-image figure-img img-fluid " alt="A generic square placeholder image with corners in a figure.">
+								  <figcaption class="figure-caption bg-dark p-2 text-center ">A caption for the above image.</figcaption>
+								</figure>
+							</li>
+							<li class="m-1">
+								<figure class="figure m-0">
+								  <img src="img/lg-2.png" class="covered-image figure-img img-fluid " alt="A generic square placeholder image with corners in a figure.">
+								  <figcaption class="figure-caption bg-dark p-2 text-center ">A caption for the above image.</figcaption>
+								</figure>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<footer class=" bg-dark d-none d-sm-block">
+		 <div class="copyright text-left text-white m-2 pl-2">
+				 ©2017 Orcun Studio, Inc.
+		</div>
+	</footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+	
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- Sly JavaScripts -->
+	<script src="js/sly.min.js"></script>
+	<script src="js/horizontal.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	<!-- Wave JavaScripts -->
+	<script src="js/wave.js"></script>
+</body>
+</html>
